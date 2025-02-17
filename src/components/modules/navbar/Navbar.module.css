@@ -1,0 +1,68 @@
+@import "./../../../app/globalsFont.css";
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+    border-bottom: 1px solid var(--primary-border-color);
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.navbar_logo {
+    font-family: MorabbaBold;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.navbar_links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar_links>li:first-child {
+    color: var(--primary-color);
+}
+
+.navbar_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    gap: 1rem;
+}
+
+.navbar_icons a {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar_icon {
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0 5px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar_icon:last-child {
+    width: auto;
+    font-size: 1rem;
+    padding: 0 1rem;
+}

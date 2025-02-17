@@ -1,3 +1,152 @@
+/*===================================================== Reset CSS Start=====================================================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*===================================================== Reset CSS Finish =====================================================*/
+
+
+
+/*===================================================== Global styles =====================================================*/
+
+/* global colors */
+
+@import "./globalColors.css";
+
+
 @font-face {
   font-family: shabnam;
   src: url("/fonts/shabnam/Shabnam-Medium.woff");
@@ -8,17 +157,49 @@
   src: url("/fonts/shabnam/Shabnam-Bold.woff");
 }
 
+@font-face {
+  font-family: Dana;
+  src: url("/fonts/Dana/woff2/DanaFaNum-Regular.woff2");
+}
+
+@font-face {
+  font-family: DanaBold;
+  src: url("/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2");
+}
+
+@font-face {
+  font-family: DanaMedium;
+  src: url("/fonts/Dana/woff2/DanaFaNum-Medium.woff2");
+}
+
+@font-face {
+  font-family: Morabba;
+  src: url("/fonts/Morabba/woff2/Morabba-Light.woff2");
+}
+
+@font-face {
+  font-family: MorabbaBold;
+  src: url("/fonts/Morabba/woff2/Morabba-Bold.woff2");
+}
+
+@font-face {
+  font-family: MorabbaMedium;
+  src: url("/fonts/Morabba/woff2/Morabba-Medium.woff2");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: shabnam;
+
+
 }
 
 body::-webkit-scrollbar {
   width: 10px;
   background-color: #fff !important;
   border-radius: 6px !important;
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -28,11 +209,14 @@ body::-webkit-scrollbar-thumb {
 html,
 body {
   max-width: 100vw;
+  font-family: Dana;
+  /* font-family:MorabbaBold ; */
 }
 
 body {
   background: white;
   position: relative;
+  color: #000;
 }
 
 a {
@@ -47,8 +231,19 @@ a {
 }
 
 .container {
-  max-width: 1222px;
+  max-width: 1224px;
   margin: 0 auto;
+}
+
+@media (max-width:1260px) {
+  .container{
+    padding:0 1.5rem;
+  }
+}
+@media (max-width:540px) {
+  .container{
+    padding:0 1rem;
+  }
 }
 
 /* swiper */
