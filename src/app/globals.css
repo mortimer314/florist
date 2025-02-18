@@ -246,6 +246,17 @@ a {
   }
 }
 
+/* global styles */
+.title{
+  font-family: MorabbaBold;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+
+
+
 /* swiper */
 .mySwiper .swiper-button-prev:after,
 .mySwiper .swiper-button-next:after {
